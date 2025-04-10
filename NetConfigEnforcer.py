@@ -3,7 +3,7 @@ import subprocess
 import sys
 import ctypes
 import platform
-import random  # <--- اضافه کردن کتابخانه random
+import random 
 from time import sleep
 
 # --- Admin Functions ---
@@ -56,15 +56,14 @@ def get_network_interfaces():
 def apply_manual_settings(interface):
     """Set static IP configuration"""
     try:
-        # تولید عدد تصادفی برای بخش آخر IP
-        last_octet = random.randint(100, 195)  # <--- تغییر در این بخش
-        ip_address = f"192.168.1.{last_octet}"  # <--- تغییر در این بخش
+        last_octet = random.randint(100, 195) 
+        ip_address = f"192.168.1.{last_octet}"
         
         print("\n⚙️ Applying static configuration...")
         commands = [
             ['netsh', 'interface', 'ip', 'set', 'address',
              f'name={interface}', 'source=static',
-             f'addr={ip_address}', 'mask=255.255.255.0', 'gateway=192.168.1.254'],  # <--- تغییر در این بخش
+             f'addr={ip_address}', 'mask=255.255.255.0', 'gateway=192.168.1.254'],
             
             ['netsh', 'interface', 'ip', 'set', 'dns',
              f'name={interface}', 'source=static', 'addr=8.8.8.8', 'validate=no'],
@@ -78,7 +77,7 @@ def apply_manual_settings(interface):
             sleep(0.5)
         
         print("\n✅ Successfully applied:")
-        print(f"IP: {ip_address}\nMask: 255.255.255.0\nGateway: 192.168.1.254")  # <--- تغییر در این بخش
+        print(f"IP: {ip_address}\nMask: 255.255.255.0\nGateway: 192.168.1.254") 
         print("DNS: 8.8.8.8, 4.2.2.4")
     
     except subprocess.CalledProcessError as e:
