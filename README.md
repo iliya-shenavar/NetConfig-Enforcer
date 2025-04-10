@@ -80,9 +80,8 @@ This script automatically attempts to elevate itself with UAC on Windows if not 
 
 ```
 netconfig/
-├── netconfig.py      # Main script file
-├── README.md         # This file
-└── (Optional) .gitignore
+├── NetConfigEnforcer.py      # Main script file
+└── README.md         # This file
 ```
 
 ---
