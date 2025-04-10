@@ -31,9 +31,9 @@ This script automates that process to avoid manual setup hassles for users.
 ├───────────────────────────────────┤
 │ Current Interface: Ethernet       │
 ├───────────────────────────────────┤
-│ 1. Set Static IP                 │
-│ 2. Enable DHCP                   │
-│ 0. Exit                          │
+│ 1. Set Static IP                  │
+│ 2. Enable DHCP                    │
+│ 0. Exit                           │
 └───────────────────────────────────┘
 ```
 
