@@ -113,9 +113,9 @@ def show_menu(interfaces, current_interface):
     print("├───────────────────────────────────┤")
     print(f"│ Current Interface: {current_interface.ljust(15)}│")
     print("├───────────────────────────────────┤")
-    print("│ 1. Set Static IP                 │")
-    print("│ 2. Enable DHCP                   │")
-    print("│ 0. Exit                          │")
+    print("│ 1. Set Static IP                  │")
+    print("│ 2. Enable DHCP                    │")
+    print("│ 0. Exit                           │")
     print("└───────────────────────────────────┘")
     return input("\nSelect option (0-2): ").strip()
 
