@@ -49,7 +49,7 @@ This script automates that process to avoid manual setup hassles for users.
 ### ▶️ Usage
 
 ```bash
-python netconfig.py
+python NetConfigEnforcer.py
 ```
 
 - When prompted, choose:
