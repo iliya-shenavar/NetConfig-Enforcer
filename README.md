@@ -101,6 +101,6 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## 👨‍💻 Author
 
-Built with 🔧 by [YourNameHere].  
+Built with 🔧 by Iliya Shenavar.  
 Special thanks to all sysadmins who live in the terminal.
 
